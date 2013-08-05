@@ -70,7 +70,6 @@ namespace Report.UI.GridReport
             }
         }
 
-
         protected void RefreshHandler(object sender, EventArgs e)
         {
             DefaultSetting();

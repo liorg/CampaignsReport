@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConflictReportHeb.aspx.cs"
-    Inherits="Report.UI.GridReport.ConflictReportHeb" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConflictReportHeb.aspx.cs" Inherits="Report.UI.GridReport.ConflictReportHeb" %>
 
 <%@ Register TagPrefix="hs" TagName="HeaderSorting" Src="~/Controls/C2013/Grid/HeaderSorting2013.ascx" %>
 <%@ Register TagPrefix="sb" TagName="StatusBar" Src="~/Controls/C2013/Grid/StatusBar.ascx" %>
@@ -25,7 +24,6 @@
             }
         }
         window.setTimeout(markRenderTime, 0);
-
     </script>
     <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
