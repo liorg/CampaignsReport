@@ -34,10 +34,7 @@ $(function () {
     $("#datepickerProposedStartDate").datepicker({ dateFormat: 'dd-mm-yy' });
     $("#datepickerProposedEndDate").datepicker({ dateFormat: 'dd-mm-yy' });
 
-    $(".ms-crm-List-Row").bind('click', function () {
-        $(".ms-crm-List-SelectedRow").removeClass("ms-crm-List-SelectedRow");
-        $(this).addClass("ms-crm-List-SelectedRow");
-    });
+  
 });
 
 function ClearField() {

@@ -172,6 +172,7 @@
     <Content Include="crm2013\newStyle2013\1033\menu.css" />
     <Content Include="crm2013\newStyle2013\1033\select.css" />
     <Content Include="crm2013\newStyle2013\1033\theme.css" />
+    <Content Include="scripts\rowclick.js" />
     <Content Include="_imgs\ico_16_2010.gif" />
     <Content Include="_imgs\imagestrips\control_imgs2013.png" />
     <Content Include="_imgs\favicon2013.ico" />

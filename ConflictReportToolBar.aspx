@@ -30,7 +30,7 @@
     <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-    <script src="scripts/ConflictReport.js" type="text/javascript"></script>
+    <script src="scripts/rowclick.js"></script>
     <link href="/crm2013/classicStyleFF2013/1033/fonts.css" rel="stylesheet" type="text/css" />
     <link href="/crm2013/classicStyleFF2013/1033/global.css" rel="stylesheet" type="text/css" />
     <link href="/crm2013/classicStyleFF2013/1033/theme.css" rel="stylesheet" type="text/css" />
