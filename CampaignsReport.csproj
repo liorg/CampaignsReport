@@ -94,6 +94,8 @@
     <Content Include="Controls\C2013\Grid\JumpBar.ascx" />
     <Content Include="Controls\C2013\Grid\RefreshButton2013.ascx" />
     <Content Include="Controls\C2013\Grid\StatusBar.ascx" />
+    <Content Include="ConflictReportHeb.aspx" />
+    <Content Include="ConflictReportToolBar.aspx" />
     <Content Include="crm2013\classicStyle2013\1033\appgrid.css" />
     <Content Include="crm2013\classicStyle2013\1033\CompositeControl.css" />
     <Content Include="crm2013\classicStyle2013\1033\controls.css" />
@@ -170,10 +172,12 @@
     <Content Include="crm2013\newStyle2013\1033\menu.css" />
     <Content Include="crm2013\newStyle2013\1033\select.css" />
     <Content Include="crm2013\newStyle2013\1033\theme.css" />
+    <Content Include="_imgs\ico_16_2010.gif" />
     <Content Include="_imgs\imagestrips\control_imgs2013.png" />
     <Content Include="_imgs\favicon2013.ico" />
     <Content Include="_imgs\imagestrips\transparent_spacer2013.gif" />
     <Content Include="_imgs\theme\Outlook14Silver\app_back.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\mnu_hSpacerGrid.png" />
     <Content Include="_imgs\theme\Outlook15White\GridColumnGradient.png" />
     <Content Include="_imgs\imagestrips\grid_ctrl_imgs2013.png" />
     <Content Include="_imgs\AdvFind\progress2013.gif" />
@@ -332,6 +336,7 @@
     <Content Include="_imgs\theme\Outlook14Silver\RightClickMenuChannel.png" />
     <Content Include="_imgs\theme\Outlook14Silver\TabGradient.gif" />
     <Content Include="_imgs\theme\Outlook15White\GridColumnGradientHover.png" />
+    <Content Include="_imgs\theme\Outlook15White\mnu_hSpacerGrid.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\MessageBox.cs" />
@@ -416,6 +421,20 @@
     </Compile>
     <Compile Include="Controls\GridBase\StatusBarBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConflictReportHeb.aspx.cs">
+      <DependentUpon>ConflictReportHeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConflictReportHeb.aspx.designer.cs">
+      <DependentUpon>ConflictReportHeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConflictReportToolBar.aspx.cs">
+      <DependentUpon>ConflictReportToolBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConflictReportToolBar.aspx.designer.cs">
+      <DependentUpon>ConflictReportToolBar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -307,7 +307,7 @@ namespace Report.Controls.GridBase
 
         #region IFilterData
 
-        public string StartDate
+        public virtual string StartDate
         {
             get
             {
@@ -322,7 +322,7 @@ namespace Report.Controls.GridBase
             }
         }
 
-        public string EndDate
+        public virtual string EndDate
         {
             get
             {
@@ -373,6 +373,64 @@ namespace Report.Controls.GridBase
 
         #endregion
 
+    }
+   
+    public  abstract class PageGridToolBarBase : PageGridBase
+    {
+        protected override void PageLoad()
+        {
+            _url = Helper.GetUrl();
+            _maxPage = int.Parse(ConfigurationManager.AppSettings["MaxPage"]);
+
+
+            if (!Page.IsPostBack)
+            {
+
+                Label lblName1 = Page.FindControl("lblNameCamp") as Label;
+                if (lblName1 != null)
+                {
+                    lblName1.Text = new Presentor().GetCampNameByCampaignId(this);
+                }
+                //datepickerProposedEndDate.Value = DateTime.Now.AddDays(90).ToString(ConstVars.DATE_FORMAT);
+                //datepickerProposedStartDate.Value = DateTime.Now.AddDays(-90).ToString(ConstVars.DATE_FORMAT);
+
+                CampaignsConflitListView.DataSource = GetDataFromSession(true);
+                DefaultSetting();
+                BindAllControls();
+            }
+        }
+        public override string StartDate
+        {
+            get
+            {
+                //if (datepickerProposedStartDate.Value != null)
+                //{
+
+                //    return datepickerProposedStartDate.Value;
+                //}
+                //else
+                //    throw new ArgumentException("start date is missing");
+                return DateTime.Now.ToString("dd-MM-yyyy");
+
+            }
+        }
+
+        public override string EndDate
+        {
+            get
+            {
+                //if (datepickerProposedEndDate.Value != null)
+                //{
+
+                //    return datepickerProposedEndDate.Value;
+                //}
+                //else
+                //    throw new ArgumentException("end date is missing");
+                return DateTime.Now.ToString("dd-MM-yyyy");
+            }
+        }
+
+        
     }
 
 }
