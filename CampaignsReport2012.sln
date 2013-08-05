@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockServiceLibrary", "MockServiceLibrary\MockServiceLibrary.csproj", "{FAB768D2-1E4D-4B29-ACAD-A8086EB6C88A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedDlls", "SharedDlls", "{68ECF596-BC00-426A-8821-FC3EECEC6E35}"
+	ProjectSection(SolutionItems) = preProject
+		Shared Dll\Microsoft.Practices.EnterpriseLibrary.Common.xml = Shared Dll\Microsoft.Practices.EnterpriseLibrary.Common.xml
+		Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.dll = Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.xml = Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+		Shared Dll\Microsoft.Practices.ServiceLocation.dll = Shared Dll\Microsoft.Practices.ServiceLocation.dll
+		Shared Dll\Microsoft.Practices.Unity.dll = Shared Dll\Microsoft.Practices.Unity.dll
+		Shared Dll\Microsoft.Practices.Unity.Interception.dll = Shared Dll\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignsReport", "CampaignsReport.csproj", "{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB768D2-1E4D-4B29-ACAD-A8086EB6C88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB768D2-1E4D-4B29-ACAD-A8086EB6C88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB768D2-1E4D-4B29-ACAD-A8086EB6C88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB768D2-1E4D-4B29-ACAD-A8086EB6C88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

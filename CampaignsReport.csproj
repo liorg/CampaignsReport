@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Report</RootNamespace>
+    <AssemblyName>CampaignsReport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Shared Dll\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Shared Dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Shared Dll\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Shared Dll\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConflictReport.aspx" />
+    <Content Include="ConflictReport2011.aspx" />
+    <Content Include="Controls\C2011\Grid\DataAreaSorting.ascx" />
+    <Content Include="Controls\C2011\Grid\HeaderSorting.ascx" />
+    <Content Include="Controls\C2011\Grid\StatusBar.ascx" />
+    <Content Include="Controls\C2013\Grid\DataAreaSorting.ascx" />
+    <Content Include="Controls\C2013\Grid\HeaderSorting2013.ascx" />
+    <Content Include="Controls\C2013\Grid\JumpBar.ascx" />
+    <Content Include="Controls\C2013\Grid\RefreshButton2013.ascx" />
+    <Content Include="Controls\C2013\Grid\StatusBar.ascx" />
+    <Content Include="crm2013\classicStyle2013\1033\appgrid.css" />
+    <Content Include="crm2013\classicStyle2013\1033\CompositeControl.css" />
+    <Content Include="crm2013\classicStyle2013\1033\controls.css" />
+    <Content Include="crm2013\classicStyle2013\1033\fonts.css" />
+    <Content Include="crm2013\classicStyle2013\1033\global.css" />
+    <Content Include="crm2013\classicStyle2013\1033\menu.css" />
+    <Content Include="crm2013\classicStyle2013\1033\select.css" />
+    <Content Include="crm2013\classicStyle2013\1033\theme.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\appgrid.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\CompositeControl.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\controls.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\fonts.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\global.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\menu.css" />
+    <Content Include="crm2013\classicStyleFF2013\1033\select.CSS" />
+    <Content Include="crm2013\classicStyleFF2013\1033\theme.css" />
+    <Content Include="crm2013\Simple\templateGridCrossBrowserWithFilter.htm" />
+    <Content Include="crm2013\Simple\templateGridCrossBrowser.htm" />
+    <Content Include="crm2013\Simple\homepageNewStyle.htm" />
+    <Content Include="crm2013\Simple\homepageClassicStyle.htm" />
+    <Content Include="crm2013\Simple\homepageClassicStyleff2.htm" />
+    <Content Include="crm2013\js\action.js" />
+    <Content Include="crm2013\js\AddRelated.js" />
+    <Content Include="crm2013\js\checkbox.js" />
+    <Content Include="crm2013\js\commandbar.js" />
+    <Content Include="crm2013\js\compositecontrol.js" />
+    <Content Include="crm2013\js\entitypropertiesutil.js" />
+    <Content Include="crm2013\js\flow_command.js" />
+    <Content Include="crm2013\js\form.js" />
+    <Content Include="crm2013\js\global.js" />
+    <Content Include="crm2013\js\GlowingImage.js" />
+    <Content Include="crm2013\js\gridcontrol.js" />
+    <Content Include="crm2013\js\GridFilters.js" />
+    <Content Include="crm2013\js\hinttext.js" />
+    <Content Include="crm2013\js\homepage.js" />
+    <Content Include="crm2013\js\lookup.js" />
+    <Content Include="crm2013\js\lookupbehavior.js" />
+    <Content Include="crm2013\js\MenuSelector.js" />
+    <Content Include="crm2013\js\presence.js" />
+    <Content Include="crm2013\js\ribbon.js" />
+    <Content Include="crm2013\js\ribbonActions.js" />
+    <Content Include="crm2013\js\ribbonLayout.js" />
+    <Content Include="crm2013\js\ribbon_main_system_library.js" />
+    <Content Include="crm2013\js\ScriptResx.js" />
+    <Content Include="crm2013\js\select.js" />
+    <Content Include="crm2013\js\stage.js" />
+    <Content Include="crm2013\js\TextInputBehavior.js" />
+    <Content Include="crm2013\js\visualizationactions.js" />
+    <Content Include="crm2013\js\visualizationpane.js" />
+    <Content Include="crm2013\js\PageLoader.js" />
+    <Content Include="crm2013\newStyle2013\1033\appgrid.css" />
+    <Content Include="crm2013\newStyle2013\1033\CompositeControl.css" />
+    <Content Include="crm2013\newStyle2013\1033\controls.css" />
+    <Content Include="crm2013\newStyle2013\1033\fonts.css" />
+    <Content Include="crm2013\newStyle2013\1033\global.css" />
+    <Content Include="crm2013\newStyle2013\1033\menu.css" />
+    <Content Include="crm2013\newStyle2013\1033\select.css" />
+    <Content Include="crm2013\newStyle2013\1033\theme.css" />
+    <Content Include="_imgs\imagestrips\control_imgs2013.png" />
+    <Content Include="_imgs\favicon2013.ico" />
+    <Content Include="_imgs\imagestrips\transparent_spacer2013.gif" />
+    <Content Include="_imgs\theme\Outlook14Silver\app_back.png" />
+    <Content Include="_imgs\theme\Outlook15White\GridColumnGradient.png" />
+    <Content Include="_imgs\imagestrips\grid_ctrl_imgs2013.png" />
+    <Content Include="_imgs\AdvFind\progress2013.gif" />
+    <Content Include="_imgs\searchclear.gif" />
+    <Content Include="scripts\ConflictReport.js" />
+    <Content Include="crm2011\1033\appgrid.css" />
+    <Content Include="crm2011\1033\CompositeControl.css" />
+    <Content Include="crm2011\1033\controls.css" />
+    <Content Include="crm2011\1033\fonts.css" />
+    <Content Include="crm2011\1033\global.css" />
+    <Content Include="crm2011\1033\menu.css" />
+    <Content Include="crm2011\1033\notifications.css" />
+    <Content Include="crm2011\1033\select.css" />
+    <Content Include="crm2011\1033\theme.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="_imgs\appmenu_back.gif" />
+    <Content Include="_imgs\app_back.gif" />
+    <Content Include="_imgs\app_back.png" />
+    <Content Include="_imgs\formnav_header_back.gif" />
+    <Content Include="_imgs\grid\asc.png" />
+    <Content Include="_imgs\grid\bar_bk.gif" />
+    <Content Include="_imgs\grid\bar_line.gif" />
+    <Content Include="_imgs\grid\bar_up.gif" />
+    <Content Include="_imgs\grid\d.gif" />
+    <Content Include="_imgs\grid\desc.png" />
+    <Content Include="_imgs\grid\disablereset.png" />
+    <Content Include="_imgs\grid\Dropdown_Arrow.png" />
+    <Content Include="_imgs\grid\grid_BarBkOn.gif" />
+    <Content Include="_imgs\grid\grid_Refresh.gif" />
+    <Content Include="_imgs\grid\page_FL0.gif" />
+    <Content Include="_imgs\grid\page_FL1.gif" />
+    <Content Include="_imgs\grid\page_L0.gif" />
+    <Content Include="_imgs\grid\page_L1.gif" />
+    <Content Include="_imgs\grid\page_R0.gif" />
+    <Content Include="_imgs\grid\page_R1.gif" />
+    <Content Include="_imgs\grid\r.gif" />
+    <Content Include="_imgs\grid\refresh16.gif" />
+    <Content Include="_imgs\grid\reset.png" />
+    <Content Include="_imgs\grid\resize.gif" />
+    <Content Include="_imgs\grid\row_selected.gif" />
+    <Content Include="_imgs\grid\stripDivider.gif" />
+    <Content Include="_imgs\ico\16_activate.gif" />
+    <Content Include="_imgs\ico\16_alert.gif" />
+    <Content Include="_imgs\ico\16_approveemailofqueue.png" />
+    <Content Include="_imgs\ico\16_back.gif" />
+    <Content Include="_imgs\ico\16_cancel.png" />
+    <Content Include="_imgs\ico\16_cancelsystemjob.gif" />
+    <Content Include="_imgs\ico\16_close.gif" />
+    <Content Include="_imgs\ico\16_closeObj.gif" />
+    <Content Include="_imgs\ico\16_convert.gif" />
+    <Content Include="_imgs\ico\16_convertactivity.gif" />
+    <Content Include="_imgs\ico\16_convertresponse.gif" />
+    <Content Include="_imgs\ico\16_converttocase.gif" />
+    <Content Include="_imgs\ico\16_converttolead.gif" />
+    <Content Include="_imgs\ico\16_converttooppo.gif" />
+    <Content Include="_imgs\ico\16_deactivate.gif" />
+    <Content Include="_imgs\ico\16_error.gif" />
+    <Content Include="_imgs\ico\16_excel.gif" />
+    <Content Include="_imgs\ico\16_export.gif" />
+    <Content Include="_imgs\ico\16_filters.png" />
+    <Content Include="_imgs\ico\16_find.gif" />
+    <Content Include="_imgs\ico\16_forward.gif" />
+    <Content Include="_imgs\ico\16_help.gif" />
+    <Content Include="_imgs\ico\16_info.gif" />
+    <Content Include="_imgs\ico\16_L_check.gif" />
+    <Content Include="_imgs\ico\16_L_help.gif" />
+    <Content Include="_imgs\ico\16_L_refresh.gif" />
+    <Content Include="_imgs\ico\16_L_remove.gif" />
+    <Content Include="_imgs\ico\16_L_save.gif" />
+    <Content Include="_imgs\ico\16_L_saveOpen.gif" />
+    <Content Include="_imgs\ico\16_Outlook.png" />
+    <Content Include="_imgs\ico\16_pausesystemjob.gif" />
+    <Content Include="_imgs\ico\16_postponesystemjob.gif" />
+    <Content Include="_imgs\ico\16_print.gif" />
+    <Content Include="_imgs\ico\16_progress.gif" />
+    <Content Include="_imgs\ico\16_propagate.gif" />
+    <Content Include="_imgs\ico\16_publish.gif" />
+    <Content Include="_imgs\ico\16_rejectemailofqueue.png" />
+    <Content Include="_imgs\ico\16_reports.gif" />
+    <Content Include="_imgs\ico\16_resumesystemjob.gif" />
+    <Content Include="_imgs\ico\16_runworkflow.gif" />
+    <Content Include="_imgs\ico\16_save.gif" />
+    <Content Include="_imgs\ico\16_saveClose.gif" />
+    <Content Include="_imgs\ico\16_saveCompleted.gif" />
+    <Content Include="_imgs\ico\16_schedule.gif" />
+    <Content Include="_imgs\ico\16_send.gif" />
+    <Content Include="_imgs\ico\16_succeeded.png" />
+    <Content Include="_imgs\ico\16_unpublish.gif" />
+    <Content Include="_imgs\ico\17_help.png" />
+    <Content Include="_imgs\ico\18_addResourceGroups.gif" />
+    <Content Include="_imgs\ico\18_addResources.gif" />
+    <Content Include="_imgs\ico\18_addSelectionRule.gif" />
+    <Content Include="_imgs\ico\18_addTeam.gif" />
+    <Content Include="_imgs\ico\18_addView.gif" />
+    <Content Include="_imgs\ico\18_editForm.gif" />
+    <Content Include="_imgs\ico_16_112.gif" />
+    <Content Include="_imgs\ico_16_4212.gif" />
+    <Content Include="_imgs\ico_16_4400.gif" />
+    <Content Include="_imgs\ico_16_insertCheck.gif" />
+    <Content Include="_imgs\imagestrips\control_imgs.png" />
+    <Content Include="_imgs\imagestrips\entity16.png" />
+    <Content Include="_imgs\imagestrips\entity_imgs.png" />
+    <Content Include="_imgs\imagestrips\formentityimages.png" />
+    <Content Include="_imgs\imagestrips\grid_ctrl_imgs.png" />
+    <Content Include="_imgs\imagestrips\repeat-x-1.png" />
+    <Content Include="_imgs\imagestrips\repeat-x-14.png" />
+    <Content Include="_imgs\imagestrips\repeat-x-15.png" />
+    <Content Include="_imgs\imagestrips\repeat-x-16.png" />
+    <Content Include="_imgs\imagestrips\ribbon.png" />
+    <Content Include="_imgs\imagestrips\ribbonhomepage.png" />
+    <Content Include="_imgs\imagestrips\transparent_spacer.gif" />
+    <Content Include="_imgs\imagestrips\visualization.png" />
+    <Content Include="_imgs\masthead.jpg" />
+    <Content Include="_imgs\masthead_live.jpg" />
+    <Content Include="_imgs\masthead_live_rtl.jpg" />
+    <Content Include="_imgs\masthead_rtl.jpg" />
+    <Content Include="_imgs\mast_back.gif" />
+    <Content Include="_imgs\menu_margin.gif" />
+    <Content Include="_imgs\nav_header_back.gif" />
+    <Content Include="_imgs\ribbon\wss\rbgbbg.png" />
+    <Content Include="_imgs\ribbon\wss\rmgrad16.png" />
+    <Content Include="_imgs\ribbon\wss\rmgrad16rtl.png" />
+    <Content Include="_imgs\ribbon\wss\tabFade.png" />
+    <Content Include="_imgs\ribbon\wss\tooltipGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\ButtonNormalGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\ButtonSelectedGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\CalendarCtrlGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\collapse_left.gif" />
+    <Content Include="_imgs\theme\Outlook14Silver\collapse_lefthover.gif" />
+    <Content Include="_imgs\theme\Outlook14Silver\collapse_right.gif" />
+    <Content Include="_imgs\theme\Outlook14Silver\collapse_righthover.gif" />
+    <Content Include="_imgs\theme\Outlook14Silver\contextmenu_hover_18.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\contextmenu_hover_20.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\contextmenu_hover_22.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\FormFooterGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\FormHeaderGradientTop.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\FormTabLinkGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\form_back.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\form_masthead.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\form_toolbar_back.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\GridColumnGradient.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\GridColumnGradientHover.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\GridTitleBarHorzLine.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\GridToolbarBkgd.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\Masthead.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\Masthead_rtl.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\nav_hover_highlight.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\RightClickMenuChannel.png" />
+    <Content Include="_imgs\theme\Outlook14Silver\TabGradient.gif" />
+    <Content Include="_imgs\theme\Outlook15White\GridColumnGradientHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\MessageBox.cs" />
+    <Compile Include="ConflictReport.aspx.cs">
+      <DependentUpon>ConflictReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConflictReport.aspx.designer.cs">
+      <DependentUpon>ConflictReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConflictReport2011.aspx.cs">
+      <DependentUpon>ConflictReport2011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConflictReport2011.aspx.designer.cs">
+      <DependentUpon>ConflictReport2011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\DataAreaSorting.ascx.cs">
+      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\DataAreaSorting.ascx.designer.cs">
+      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\HeaderSorting.ascx.cs">
+      <DependentUpon>HeaderSorting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\HeaderSorting.ascx.designer.cs">
+      <DependentUpon>HeaderSorting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\StatusBar.ascx.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2011\Grid\StatusBar.ascx.designer.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\DataAreaSorting.ascx.cs">
+      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\DataAreaSorting.ascx.designer.cs">
+      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\HeaderSorting2013.ascx.cs">
+      <DependentUpon>HeaderSorting2013.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\HeaderSorting2013.ascx.designer.cs">
+      <DependentUpon>HeaderSorting2013.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\JumpBar.ascx.cs">
+      <DependentUpon>JumpBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\JumpBar.ascx.designer.cs">
+      <DependentUpon>JumpBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\RefreshButton2013.ascx.cs">
+      <DependentUpon>RefreshButton2013.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\RefreshButton2013.ascx.designer.cs">
+      <DependentUpon>RefreshButton2013.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\StatusBar.ascx.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\C2013\Grid\StatusBar.ascx.designer.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridBase\DataAreaSortingBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridBase\HeaderSortingBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridBase\PageGridBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridBase\StatusBarBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MockServiceLibrary\MockServiceLibrary.csproj">
+      <Project>{fab768d2-1e4d-4b29-acad-a8086eb6c88a}</Project>
+      <Name>MockServiceLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54144</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
