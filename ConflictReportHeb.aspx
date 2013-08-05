@@ -318,7 +318,7 @@
        var APP_SOLUTION_ID = '';
 </script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
         window.initActionQueueParams = {};
         function SetPLTMarker() {
             if (!window.PostRenderTime) { window.PostRenderTime = (new Date()).getTime(); }
@@ -397,9 +397,9 @@
             ]);
         });
         registerEvents(window, 'unload', function () { window.onresize = null; window.onerror = null; window.onload = null; });
-    </script>
-    <script type="text/javascript">
+</script>
+<script type="text/javascript">
         var _homepageParameterInfo = [{ 'controlId': 'crmGrid_SavedNewQuerySelector', 'parameterName': 'viewid' }];
-    </script>
+</script>
 </body>
 </html>
