@@ -1,4 +1,4 @@
-﻿using Guardian.Taglit.ServiceLibrary.Application;
+﻿using MotSite.ServiceLibrary.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,96 +8,41 @@ using System.Web.UI.WebControls;
 
 namespace Report.Controls.GridBase
 {
-    public class HeaderSortingBase : UserControl
+    public class GridColumnsControl:UserControl
     {
-        protected System.Web.UI.WebControls.Repeater repWidth;
-        protected System.Web.UI.WebControls.Repeater repCols;
-
-        public event FieldNameSortingEventHandler FieldNameSortingEventHandler;
-
-        protected const string cssDefault = "ms-crm-List-Sortable";
-        protected const string cssUp = "ms-crm-ImageStrip-bar_up";
-        protected const string cssDown = "ms-crm-ImageStrip-dropdown";
-
-        public virtual void BindData()
+        protected virtual void SetSchemaBuilder(SchemaBuilder schemaBuilder)
         {
-            var p = new Presentor();
-            repCols.DataSource = p.Schema;
-            repCols.DataBind();
-
-            repWidth.DataSource = p.Schema;
-            repWidth.DataBind();
+            HttpContext.Current.Items["SchemaBuilder"] = schemaBuilder;
         }
 
-        
-
-        protected virtual void repCols_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        protected virtual SchemaBuilder GetSchemaBuilder()
         {
-            var imgSortType = (Image)e.Item.FindControl("imgSortType");
-            var linkHeaderButton = (LinkButton)e.Item.FindControl("LinkHeaderButton");
-            var row = e.Item.DataItem as SchemaDetail;
-
-            if (linkHeaderButton != null)
+            var schemaBuilder = (SchemaBuilder)HttpContext.Current.Items["SchemaBuilder"];
+            if (schemaBuilder != null)
             {
-                if (row != null)
-                {
-                    linkHeaderButton.CommandName = row.FieldName.ToString();
-                }
-
+                return schemaBuilder;
             }
-            if (imgSortType != null && row != null)
-            {
-                if (FieldName.ToString() == row.FieldName.ToString())
-                {
-                    if (IsDesc)
-                        imgSortType.CssClass = cssDown;
-                    else
-                        imgSortType.CssClass = cssUp;
-
-                }
-                else
-                {
-                    imgSortType.CssClass = cssDefault;
-                }
-
-            }
-
+            return null;
         }
 
-        protected virtual void repCols_ItemCommand(object source, RepeaterCommandEventArgs e)
-        {
-            if (!String.IsNullOrEmpty(e.CommandName))
-            {
-
-                var currentFieldName = (FieldName)Enum.Parse(typeof(FieldName), e.CommandName);
-
-                if (FieldName == currentFieldName)
-                {
-                    IsDesc = !IsDesc;
-                }
-                else
-                {
-                    IsDesc = false;
-                }
-
-                FieldName = currentFieldName;
-                if (FieldNameSortingEventHandler != null)
-                {
-                    FieldNameSortingEventHandler(source, new FieldNameSortingEventArgs { FieldName = FieldName, IsDesc = IsDesc });
-                }
-            }
-            BindData();
-        }
-
-        public FieldName FieldName
+        public string FieldName
         {
             get
             {
                 if (ViewState["FieldNameOrder"] == null)
                 {
-                    ViewState["FieldNameOrder"] = FieldName.CampaignName;
+                    SchemaBuilder schemaBuilder = GetSchemaBuilder();
+                    if (schemaBuilder != null)
+                    {
+                        ViewState["FieldNameOrder"] = schemaBuilder.DefaultFieldName;
+                    }
+                    else
+                    {
+                        ViewState["FieldNameOrder"] = "";
+
+                    }
                 }
-                return (FieldName)ViewState["FieldNameOrder"];
+                return (string)ViewState["FieldNameOrder"];
             }
             set
             {
@@ -120,5 +65,97 @@ namespace Report.Controls.GridBase
                 ViewState["IsDesc"] = value;
             }
         }
+    }
+
+    public class HeaderSortingBase : GridColumnsControl
+    {
+        protected System.Web.UI.WebControls.Repeater repWidth;
+        protected System.Web.UI.WebControls.Repeater repCols;
+
+        public event FieldNameSortingEventHandler FieldNameSortingEventHandler;
+
+        protected const string cssDefault = "ms-crm-List-Sortable";
+        protected const string cssUp = "ms-crm-ImageStrip-bar_up";
+        protected const string cssDown = "ms-crm-ImageStrip-dropdown";
+
+        public virtual void BindData(SchemaBuilder schemaBuilder)
+        {
+            SetSchemaBuilder(schemaBuilder);
+
+            repCols.DataSource = schemaBuilder.Schema;
+            repCols.DataBind();
+
+            repWidth.DataSource = schemaBuilder.Schema;
+            repWidth.DataBind();
+        }
+
+      
+
+        protected virtual void repCols_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            var imgSortType = (Image)e.Item.FindControl("imgSortType");
+            var linkHeaderButton = (LinkButton)e.Item.FindControl("LinkHeaderButton");
+            var row = e.Item.DataItem as SchemaDetail;
+
+            if (linkHeaderButton != null)
+            {
+                if (row != null)
+                {
+                    linkHeaderButton.CommandName = row.FieldName.ToString();
+                }
+
+            }
+            if (imgSortType != null && row != null)
+            {
+                if (FieldName== row.FieldName.ToString())
+                {
+                    if (IsDesc)
+                        imgSortType.CssClass = cssDown;
+                    else
+                        imgSortType.CssClass = cssUp;
+
+                }
+                else
+                {
+                    imgSortType.CssClass = cssDefault;
+                }
+
+            }
+
+        }
+
+        protected virtual void repCols_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(e.CommandName))
+            {
+
+                var currentFieldName = e.CommandName;
+
+                if (FieldName == currentFieldName)
+                {
+                    IsDesc = !IsDesc;
+                }
+                else
+                {
+                    IsDesc = false;
+                }
+
+                FieldName = currentFieldName;
+                if (FieldNameSortingEventHandler != null)
+                {
+                    FieldNameSortingEventHandler(source, new FieldNameSortingEventArgs { FieldName = FieldName, IsDesc = IsDesc });
+                }
+            }
+            SchemaBuilder schemaBuilder = GetSchemaBuilder();
+            if (schemaBuilder != null)
+            {
+                BindData(schemaBuilder);
+            }
+          
+        }
+
+      
+
+      
     }
 }

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Guardian.Taglit.ServiceLibrary.Application
+namespace MotSite.ServiceLibrary.Application
 {
     public class SchemaDetail
     {
-        public FieldName FieldName { get; set; }
+        public string FieldName { get; set; }
         public string Title { get; set; }
         public Type TypeField { get; set; }
         public int Width { get; set; }
@@ -13,5 +13,7 @@ namespace Guardian.Taglit.ServiceLibrary.Application
         public string EntityName { get; set; }
         public string FieldSchemaName { get; set; }
         public string EntityId { get; set; }
+        public bool IsUrlCrm { get; set; }
+        public string UrlHolder { get; set; }
     }
 }

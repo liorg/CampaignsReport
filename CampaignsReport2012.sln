@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedDlls", "SharedDlls", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignsReport", "CampaignsReport.csproj", "{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPresentor", "GridPresentor\GridPresentor\GridPresentor.csproj", "{2FC0D129-1109-4478-8160-B517641BC0B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{920390F0-4EE9-4352-AEE4-2B8F5A8CB8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC0D129-1109-4478-8160-B517641BC0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC0D129-1109-4478-8160-B517641BC0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC0D129-1109-4478-8160-B517641BC0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC0D129-1109-4478-8160-B517641BC0B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

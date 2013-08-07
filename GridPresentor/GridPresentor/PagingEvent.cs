@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Guardian.Taglit.ServiceLibrary.Application
+namespace MotSite.ServiceLibrary.Application
 {
     public delegate void PagingEventHandler(object sender, PagingEventArgs e);
 

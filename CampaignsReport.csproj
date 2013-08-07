@@ -411,13 +411,25 @@
     <Compile Include="Controls\C2013\Grid\StatusBar.ascx.designer.cs">
       <DependentUpon>StatusBar.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Custom\PageConflit2011ReportGrid.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Custom\PageConflit2013ReportGrid.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Controls\GridBase\DataAreaSortingBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\GridBase\HeaderSortingBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\GridBase\PageGridBase.cs">
+    <Compile Include="Controls\GridBase\PageGrid\PageGrid2011Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridBase\PageGrid\PageGrid2013Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GridBase\PageGrid\PageGridBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\GridBase\StatusBarBase.cs">
@@ -440,6 +452,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GridPresentor\GridPresentor\GridPresentor.csproj">
+      <Project>{2fc0d129-1109-4478-8160-b517641bc0b1}</Project>
+      <Name>GridPresentor</Name>
+    </ProjectReference>
     <ProjectReference Include="MockServiceLibrary\MockServiceLibrary.csproj">
       <Project>{fab768d2-1e4d-4b29-acad-a8086eb6c88a}</Project>
       <Name>MockServiceLibrary</Name>
