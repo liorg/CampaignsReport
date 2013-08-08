@@ -1,9 +1,12 @@
-﻿
+﻿using System;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using MotSite.ServiceLibrary.Application;
 using Report.Controls.GridBase;
 
 namespace Report.Controls.C2013.Grid
 {
-    public partial class HeaderSorting2013 : HeaderSortingBase
+    public  class HeaderSorting2013 : HeaderSortingBase
     {
         protected string GetCrmGridResizeId(object o)
         {

@@ -355,84 +355,10 @@
     <Compile Include="ConflictReport2011.aspx.designer.cs">
       <DependentUpon>ConflictReport2011.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\C2011\Grid\DataAreaSorting.ascx.cs">
-      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2011\Grid\DataAreaSorting.ascx.designer.cs">
-      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2011\Grid\HeaderSorting.ascx.cs">
-      <DependentUpon>HeaderSorting.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2011\Grid\HeaderSorting.ascx.designer.cs">
-      <DependentUpon>HeaderSorting.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2011\Grid\StatusBar.ascx.cs">
-      <DependentUpon>StatusBar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2011\Grid\StatusBar.ascx.designer.cs">
-      <DependentUpon>StatusBar.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\DataAreaSorting.ascx.cs">
-      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\DataAreaSorting.ascx.designer.cs">
-      <DependentUpon>DataAreaSorting.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\HeaderSorting2013.ascx.cs">
-      <DependentUpon>HeaderSorting2013.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\HeaderSorting2013.ascx.designer.cs">
-      <DependentUpon>HeaderSorting2013.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\JumpBar.ascx.cs">
-      <DependentUpon>JumpBar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\JumpBar.ascx.designer.cs">
-      <DependentUpon>JumpBar.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\RefreshButton2013.ascx.cs">
-      <DependentUpon>RefreshButton2013.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\RefreshButton2013.ascx.designer.cs">
-      <DependentUpon>RefreshButton2013.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\StatusBar.ascx.cs">
-      <DependentUpon>StatusBar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\C2013\Grid\StatusBar.ascx.designer.cs">
-      <DependentUpon>StatusBar.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Custom\PageConflit2011ReportGrid.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\Custom\PageConflit2013ReportGrid.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\DataAreaSortingBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\HeaderSortingBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\PageGrid\PageGrid2011Base.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\PageGrid\PageGrid2013Base.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\PageGrid\PageGridBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\GridBase\StatusBarBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConflictReportHeb.aspx.cs">
@@ -455,6 +381,10 @@
     <ProjectReference Include="GridPresentor\GridPresentor\GridPresentor.csproj">
       <Project>{2fc0d129-1109-4478-8160-b517641bc0b1}</Project>
       <Name>GridPresentor</Name>
+    </ProjectReference>
+    <ProjectReference Include="GridUIControl\GridUIControl.csproj">
+      <Project>{77569753-8d89-4f98-996a-52f74bec2c58}</Project>
+      <Name>GridUIControl</Name>
     </ProjectReference>
     <ProjectReference Include="MockServiceLibrary\MockServiceLibrary.csproj">
       <Project>{fab768d2-1e4d-4b29-acad-a8086eb6c88a}</Project>

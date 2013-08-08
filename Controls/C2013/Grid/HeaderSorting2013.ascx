@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="~/Controls/C2013/Grid/HeaderSorting2013.ascx.cs"
+﻿<%@ Control Language="C#" AutoEventWireup="true" 
     Inherits="Report.Controls.C2013.Grid.HeaderSorting2013" %>
 <table id="crmGrid_gridBar" class="ms-crm-List-Header" cellspacing="0" summary="From each column header, you can sort and filter the records in that column."
     cellpadding="0">

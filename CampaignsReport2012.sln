@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignsReport", "Campaign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPresentor", "GridPresentor\GridPresentor\GridPresentor.csproj", "{2FC0D129-1109-4478-8160-B517641BC0B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridUIControl", "GridUIControl\GridUIControl.csproj", "{77569753-8D89-4F98-996A-52F74BEC2C58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{2FC0D129-1109-4478-8160-B517641BC0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC0D129-1109-4478-8160-B517641BC0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC0D129-1109-4478-8160-B517641BC0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77569753-8D89-4F98-996A-52F74BEC2C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77569753-8D89-4F98-996A-52F74BEC2C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77569753-8D89-4F98-996A-52F74BEC2C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77569753-8D89-4F98-996A-52F74BEC2C58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

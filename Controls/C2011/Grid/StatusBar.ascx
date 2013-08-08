@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="~/Controls/C2011/Grid/StatusBar.ascx.cs"
+﻿<%@ Control Language="C#" AutoEventWireup="true" 
     Inherits="Report.Controls.C2011.Grid.StatusBar" %>
 <tr class="ms-crm-List-StatusBar">
     <td>

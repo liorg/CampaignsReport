@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="~/Controls/C2013/Grid/StatusBar.ascx.cs" Inherits="Report.Controls.C2013.Grid.StatusBar" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true"  Inherits="Report.Controls.C2013.Grid.StatusBar" %>
 <tr class="ms-crm-List-StatusBar">
     <td>
         <table id="gridStatusBarCustom" class="ms-crm-List-StatusBar" cellspacing="0" cellpadding="0">

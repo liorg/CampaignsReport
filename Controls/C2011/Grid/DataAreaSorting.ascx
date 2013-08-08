@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="~/Controls/C2011/Grid/DataAreaSorting.ascx.cs" Inherits="Report.Controls.C2011.Grid.DataAreaSorting" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Report.Controls.C2011.Grid.DataAreaSorting" %>
 <asp:Repeater runat="server" ID="repSortStyle">
     <HeaderTemplate>
         <colgroup>

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RefreshButton2013.ascx.cs" Inherits="Report.Controls.C2013.Grid.RefreshButton2013" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true"  Inherits="Report.Controls.C2013.Grid.RefreshButton2013" %>
 <div id="refreshButton" class="ms-crm-List-RefreshButton">
     <asp:LinkButton ID="RefreshButton1" TabIndex="0" OnClick="RefreshButton_Click"
         runat="server">

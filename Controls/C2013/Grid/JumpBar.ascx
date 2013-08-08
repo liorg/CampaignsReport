@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="JumpBar.ascx.cs" Inherits="Report.Controls.C2013.Grid.JumpBar" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Report.Controls.C2013.Grid.JumpBar" %>
 <table id="crmGrid_JumpBar" gridid="crmGrid" class="ms-crm-List-Index" cellpadding="2"
     cellspacing="0" style="top: auto; height: 24px">
     <tr title="View&#32;records&#32;that&#32;start&#32;with&#32;this&#32;letter">

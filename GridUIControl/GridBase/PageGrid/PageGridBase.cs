@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.UI;
 using System.Configuration;
-using Guardian.Taglit.ServiceLibrary;
-using Guardian.Taglit.ServiceLibrary.DataModel;
+using GridUIControl.ServiceLibrary;
+using Microsoft.Practices.EnterpriseLibrary.Logging;
 using MotSite.ServiceLibrary.Application;
 using System.Web.UI.WebControls;
-using Microsoft.Practices.EnterpriseLibrary.Logging;
-using Report.UI.App;
 using System.Web.UI.HtmlControls;
+using Report.UI.App;
 
 namespace Report.Controls.GridBase
 {
@@ -146,7 +145,7 @@ namespace Report.Controls.GridBase
                 }
                 else
                 {
-                    Session["data"] = new List<CampaignConflitView>();
+                    Session["data"] = new List<T>();
                 }
 
             }
