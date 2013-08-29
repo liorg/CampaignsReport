@@ -80,7 +80,7 @@
                             <span tabindex="-1" class="ms-crm-Menu-Label"><a tabindex="0" class="ms-crm-Menu-Label"
                                 onclick="return false;" href="javascript:onclick();" target="_self">
                                 <img tabindex="-1" class="ms-crm-Menu-ButtonFirst" id="" alt="צור פריט תבנית דואר אלקטרוני חדש"
-                                    src="/_imgs/ico_16_2010.gif?ver=243798751" /><span tabindex="-1" class="ms-crm-MenuItem-TextLTR">חדש</span></a></span>
+                                    src="/_imgsOrion/ico_16_2010.gif?ver=243798751" /><span tabindex="-1" class="ms-crm-MenuItem-TextLTR">חדש</span></a></span>
                         </li>
                         <li tabindex="-1" class="ms-crm-Menu-Spacer">&nbsp;<img src="_imgs/theme/Outlook14Silver/mnu_hSpacerGrid.png" />
                             &nbsp; </li>
@@ -89,7 +89,7 @@
                                 tabindex="-1" class="ms-crm-Menu-Label"><a tabindex="0" class="ms-crm-Menu-Label"
                                     onclick="return false;" href="javascript:onclick();" target="_self">
                                     <img tabindex="-1" class="ms-crm-ImageStrip-16_print ms-crm-Menu-ButtonFirst" id="16_print"
-                                        alt="הצג לפני הדפסה" src="/_imgs/imagestrips/transparent_spacer.gif" /><span tabindex="-1"
+                                        alt="הצג לפני הדפסה" src="/_imgsOrion/imagestrips/transparent_spacer.gif" /><span tabindex="-1"
                                             style="display: none;">הצג לפני הדפסה</span></a></span> </li>
                         <li tabindex="-1" class="ms-crm-Menu-Spacer">&nbsp;<img src="_imgs/theme/Outlook14Silver/mnu_hSpacerGrid.png" />&nbsp;
                         </li>
@@ -98,7 +98,7 @@
                             <span tabindex="-1" class="ms-crm-Menu-Label"><a tabindex="0" class="ms-crm-Menu-Label"
                                 onclick="return false;" href="javascript:onclick();" target="_self">
                                 <img tabindex="-1" class="ms-crm-ImageStrip-ico_16_delete ms-crm-Menu-ButtonFirst"
-                                    id="ico_16_delete" alt="מחק" src="/_imgs/imagestrips/transparent_spacer.gif" /><span
+                                    id="ico_16_delete" alt="מחק" src="/_imgsOrion/imagestrips/transparent_spacer.gif" /><span
                                         tabindex="-1" style="display: none;">מחק</span></a></span> </li>
                         <li tabindex="-1" class="ms-crm-Menu-Spacer">&nbsp;<img src="_imgs/theme/Outlook14Silver/mnu_hSpacerGrid.png" />&nbsp;
                         </li>
@@ -106,7 +106,7 @@
                             onclick="eval(this.getAttribute('action'))" action="launchOnDemandWorkflow('crmGrid', '2010', '')">
                             <span tabindex="-1" class="ms-crm-Menu-Label"><a tabindex="0" class="ms-crm-Menu-Label"
                                 onclick="return false;" href="javascript:onclick();" target="_self">
-                                <img tabindex="-1" class="ms-crm-Menu-ButtonFirst" id="Img1" alt="הפעל זרימת עבודה" src="/_imgs/ico/16_runworkflow.gif?ver=243798751" /><span
+                                <img tabindex="-1" class="ms-crm-Menu-ButtonFirst" id="Img1" alt="הפעל זרימת עבודה" src="/_imgsOrion/ico/16_runworkflow.gif?ver=243798751" /><span
                                     tabindex="-1" class="ms-crm-MenuItem-TextLTR">הפעלת זרימת עבודה...</span></a></span>
                         </li>
                         <li tabindex="-1" title="התחל דו-שיח" class="ms-crm-Menu ms-crm-Menu-Read" id="RunInteractiveWorkflowGrid"
@@ -114,7 +114,7 @@
                             <span tabindex="-1" class="ms-crm-Menu-Label"><a tabindex="0" class="ms-crm-Menu-Label"
                                 onclick="return false;" href="javascript:onclick();" target="_self">
                                 <img tabindex="-1" class="ms-crm-ImageStrip-startdialog16 ms-crm-Menu-ButtonFirst"
-                                    id="startdialog16" alt="התחל דו-שיח" src="/_imgs/imagestrips/transparent_spacer.gif" /><span
+                                    id="startdialog16" alt="התחל דו-שיח" src="/_imgsOrion/imagestrips/transparent_spacer.gif" /><span
                                         tabindex="-1" class="ms-crm-MenuItem-TextLTR">התחל דו-שיח</span></a></span>
                         </li>
                     </ul>

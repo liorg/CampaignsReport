@@ -88,7 +88,9 @@
     <Compile Include="C2013\Grid\RefreshButton2013.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="C2013\Grid\StatusBar.cs" />
+    <Compile Include="C2013\Grid\StatusBar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="GridBase\DataAreaSortingBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
