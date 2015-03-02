@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GridPresentor\GridPresentor\GridPresentor.csproj">
-      <Project>{2fc0d129-1109-4478-8160-b517641bc0b1}</Project>
+      <Project>{2FC0D129-1109-4478-8160-B517641BC0B1}</Project>
       <Name>GridPresentor</Name>
     </ProjectReference>
   </ItemGroup>

@@ -53,19 +53,19 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
-      <HintPath>..\Shared Dll\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <HintPath>Shared Dll\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
-      <HintPath>..\Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+      <HintPath>Shared Dll\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
-      <HintPath>..\Shared Dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <HintPath>Shared Dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\Shared Dll\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>Shared Dll\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity.Interception">
-      <HintPath>..\Shared Dll\Microsoft.Practices.Unity.Interception.dll</HintPath>
+      <HintPath>Shared Dll\Microsoft.Practices.Unity.Interception.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -566,11 +566,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GridPresentor\GridPresentor\GridPresentor.csproj">
-      <Project>{2fc0d129-1109-4478-8160-b517641bc0b1}</Project>
+      <Project>{2FC0D129-1109-4478-8160-B517641BC0B1}</Project>
       <Name>GridPresentor</Name>
     </ProjectReference>
     <ProjectReference Include="GridUIControl\GridUIControl.csproj">
-      <Project>{77569753-8d89-4f98-996a-52f74bec2c58}</Project>
+      <Project>{77569753-8D89-4F98-996A-52F74BEC2C58}</Project>
       <Name>GridUIControl</Name>
     </ProjectReference>
     <ProjectReference Include="MockServiceLibrary\MockServiceLibrary.csproj">
